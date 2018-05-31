@@ -127,11 +127,10 @@ void display()
 
 }
 
-
-void  main()
+void main(int argc, char **argv)
 {
 	printf("Enter line co-ordinates:");
-	
+
 	cin >> xd1 >> yd1 >> xd2 >> yd2;
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
@@ -142,7 +141,7 @@ void  main()
 	glutKeyboardFunc(mykey);
 	init();
 	glutMainLoop();
-	return 0;
+	
 }
 
 //-200 -200 200 200
